@@ -27,6 +27,19 @@ const demos =  [
       highlights : "list-disc list-inside text-gray-500",
       overlays : ["absolute inset-0 bg-gray-100 opacity-50 rounded-lg"],
     },
+  },
+  {
+    href : "/phone-login",
+    title : "Phone OTP",
+    description : "Login with your phone number via SMS OTP",
+    highlights : ["6-digit OTP Input Boxes", "30s Resend Timer", "MSG91 Integration"],
+    theme : {
+      card : "border  border-gray-300 rounded-lg p-4",
+      title : "text-xl font-bold mb-2",
+      description : "text-gray-600 mb-4",
+      highlights : "list-disc list-inside text-gray-500",
+      overlays : ["absolute inset-0 bg-gray-100 opacity-50 rounded-lg"],
+    },
   }
 ]
 
