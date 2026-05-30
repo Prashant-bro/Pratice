@@ -77,7 +77,7 @@ export default function PhoneLoginDemo({ user: initialUser }: PhoneLoginDemoProp
         setSuccess(null);
 
         try {
-            const res = await fetch("/api/phone-otp/send", {
+            const res = await fetch("/api/auth/otp/send", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ phone: fullPhone }),
@@ -110,7 +110,7 @@ export default function PhoneLoginDemo({ user: initialUser }: PhoneLoginDemoProp
         setSuccess(null);
 
         try {
-            const res = await fetch("/api/phone-otp/verify", {
+            const res = await fetch("/api/auth/otp/verify", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ phone: fullPhone, otp: otpString }),
@@ -146,7 +146,7 @@ export default function PhoneLoginDemo({ user: initialUser }: PhoneLoginDemoProp
         setError(null);
 
         try {
-            const res = await fetch("/api/phone-otp/resend", {
+            const res = await fetch("/api/auth/otp/resend", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ phone: fullPhone }),
